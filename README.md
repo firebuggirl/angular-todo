@@ -38,7 +38,7 @@ $ ng github-pages:deploy --message 'deploy(dist): deploy on GitHub pages'
 Services registered in AppComponent are only available to AppComponent and its component tree. Services registered in AppModule are available to all components in the entire application.
 
 
-##To deploy an Angular 2 app with the Angular CLI to Heroku:
+## To deploy an Angular 2 app with the Angular CLI to Heroku:
 
 https://angular-cli-heroku.herokuapp.com/
 
