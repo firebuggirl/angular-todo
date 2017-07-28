@@ -36,3 +36,21 @@ Angular CLI makes it super simple to deploy our application to GitHub Pages with
 $ ng github-pages:deploy --message 'deploy(dist): deploy on GitHub pages'
 
 Services registered in AppComponent are only available to AppComponent and its component tree. Services registered in AppModule are available to all components in the entire application.
+
+
+##To deploy an Angular 2 app with the Angular CLI to Heroku:
+
+https://angular-cli-heroku.herokuapp.com/
+
+* Create a Heroku account
+* Install the Heroku CLI
+* Create a Heroku app in your project directory with heroku create
+* Move the angular-cli dependency from devDependencies to dependencies in your package.json
+
+* Create a postinstall script in your package.json which builds your project to a dist directory on your server: ng build --aot -prod
+
+* Install express: npm install express --save
+
+* Create a server.js file in the root of your project and add code to serve the static files in your dist directory
+
+* Commit your work and push it to Heroku to deploy: git push heroku master
